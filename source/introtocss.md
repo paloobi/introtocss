@@ -35,7 +35,7 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 <!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
 <!-- _color: white -->
 <!-- _header: "" -->
-<!-- _footer: "Allie Polubiec\nalexandra.polubiec@gmail.com\n[github.com/paloobi](https://www.github.com/paloobi)" -->
+<!-- _footer: "**Allie Polubiec**\nemail: alexandra.polubiec@gmail.com\nslides: [github.com/paloobi/intro-to-css]([github.com/paloobi](https://www.github.com/paloobi))" -->
 <!-- _class: titlePage -->
 <style>
     section.titlePage footer {
