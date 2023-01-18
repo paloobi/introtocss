@@ -1,7 +1,7 @@
 ---
 marp: true
 header: Intro to CSS
-footer: "[github.com/paloobi/introtocss-slides](github.com/paloobi/introtocss-slides)"
+footer: "[github.com/paloobi/introtocss](github.com/paloobi/introtocss)"
 ---
 
 <style>
