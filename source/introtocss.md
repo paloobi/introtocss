@@ -437,7 +437,7 @@ Select subjects by their `class` attribute.
 
 ## ID Selectors
 
-Select subject by its `id` atribute.
+Select subject by its `id` attribute.
 
 ### HTML
 ```html
@@ -668,10 +668,11 @@ h1 {
 <!-- _header: Intro to CSS > The Cascade -->
 
 <!-- I recommend spending some time reading the MDN articles on Cascade to learn more about Relevance, Importance & Origin. -->
-<!-- But as a Developer, the aspects of this cascade that will be most directly involved in the CSS code you write are Specificty & Origin-->
+<!-- But as a Developer, the aspects of this cascade that will be most directly involved in the CSS code you write are Relevance, Specificity & Order-->
+<!-- RELEVANCE = selectors -->
 # The **Cascade** Algorithm
 
-#### 1. Relevance
+#### 1. **Relevance**
 
 #### 2. Origin & Importance
 
