@@ -35,7 +35,15 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 <!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
 <!-- _color: white -->
 <!-- _header: "" -->
-<!-- _footer: "" -->
+<!-- _footer: "Allie Polubiec\nalexandra.polubiec@gmail.com\n[github.com/paloobi](https://www.github.com/paloobi)" -->
+<!-- _class: titlePage -->
+<style>
+    section.titlePage footer {
+        font-size: 20px;
+        /* font-weight: bold; */
+        color: white;
+    }
+</style>
 
 # Intro to CSS
 
