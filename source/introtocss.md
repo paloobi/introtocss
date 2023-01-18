@@ -35,7 +35,7 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 
 
 <!--  SECTION 1: INTRO  -------------------------------->
-
+<!-- TIME: 1.5 min -->
 <!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
 <!-- _color: white -->
 <!-- _header: "" -->
@@ -81,7 +81,7 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 ---
 
 <!--  SECTION 2: WHAT IS CSS  -------------------------------->
-
+<!-- TIME: 3 min -->
 <!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
 <!-- _color: white -->
 <!-- _header: "" -->
@@ -183,9 +183,11 @@ Source: https://www.w3.org/Consortium/mission
 # Your Browser is Already Using CSS
 ## **Browser Default Styles**
 
-<!--  SECTION 3: BOX MODEL  -------------------------------->
-
 ---
+
+<!--  SECTION 3: BOX MODEL  -------------------------------->
+<!-- TIME: 6 minutes -->
+
 <!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
 <!-- _color: white -->
 <!-- _header: "" -->
@@ -315,6 +317,7 @@ Anatomy of a Block Box in CSS
 ---
 
 <!--  SECTION 4: WRITING CSS  -------------------------------->
+<!-- TIME: 6 min -->
 
 <!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
 <!-- _color: white -->
@@ -508,6 +511,7 @@ See more in [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/do
 ---
 
 <!--  SECTION 5: ADDING CSS TO HTML  -------------------------------->
+<!-- TIME: 4 min -->
 
 <!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
 <!-- _color: white -->
@@ -590,7 +594,7 @@ source: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_w
 ---
 
 <!--  SECTION 6: THE CASCADE  -------------------------------->
-
+<!-- TIME: ??? 7.5 min? -->
 <!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
 <!-- _color: white -->
 <!-- _header: "" -->
@@ -838,6 +842,7 @@ MDN Docs:
 ---
 
 <!--  SECTION 7: OUTRO  -------------------------------->
+<!-- TIME: 2 -->
 
 <!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
 <!-- _color: white -->
