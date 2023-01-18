@@ -293,7 +293,7 @@ Anatomy of a Block Box in CSS
 <!-- _header: "" -->
 <!-- _footer: "" -->
 
-# CSS Syntax
+# Writing CSS
 
 ---
 <!-- _header: Intro to CSS > Writing CSS -->
@@ -443,7 +443,7 @@ Select subject by its `id` attribute.
 * Psuedo-elements: `p::first-line`
 * Attribute selectors: `a[href]` or `a[href="example.com"]`
 * Combinators
-    - Lists (`h1`, `p`)
+    - Lists (`h1, p`)
     - Descendent (`div p`)
     - Child (`div > p`)
     - Sibling (`h1 ~ p` and `h1 + p`)
