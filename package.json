@@ -1,0 +1,17 @@
+{
+  "name": "css-slides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "marp -I ./source -o ./slides",
+    "build-notes": "marp --notes -I ./source -o ./notes",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^2.3.0",
+    "@marp-team/marp-core": "^3.4.2"
+  }
+}
