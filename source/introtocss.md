@@ -26,6 +26,11 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
     a {
         color: #D000FF;
     }
+
+    section.twoColumnImage p {
+        display: flex;
+        justify-content: space-around;
+    }
 </style>
 
 
@@ -243,20 +248,20 @@ examples:`a`, `span`
     }
 </style>
 
-<!-- MARGIN = space around -->
-<!-- BORDER = border around the outside of the object -->
-<!-- PADDING = space between the content and its border; space inside -->
 <!-- CONTENT = the dynamic content, such as the text in a paragraph, or the label on a button -->
+<!-- PADDING = space between the content and its border; space inside -->
+<!-- BORDER = border around the outside of the object -->
+<!-- MARGIN = space around -->
 # The Box Model
 
 Anatomy of a Block Box in CSS
 
 ![img w:460 center](../images/box-model.png)
 
-* Margin
-* Border
-* Padding
 * Content
+* Padding
+* Border
+* Margin
 
 ---
 <!-- _header: Intro to CSS > Box Model -->
@@ -269,27 +274,11 @@ Anatomy of a Block Box in CSS
 ---
 <!-- _header: Intro to CSS > Box Model -->
 <!-- _class: twoColumnImage -->
-<style>
-    section.twoColumnImage p {
-        display: flex;
-        justify-content: space-around;
-    }
-</style>
 
-# Margin
+# Content
 
-![img w:400](../images/box-model-example-margin-1.png)
-![img w:400](../images/box-model-example-margin-2.png)
-
----
-<!-- _header: Intro to CSS > Box Model -->
-<!-- _class: twoColumnImage -->
-
-# Border
-
-![img w:400](../images/box-model-example-border-1.png)
-![img w:400](../images/box-model-example-border-2.png)
-
+![img w:600](../images/box-model-example-content-1.png)
+![img w:600](../images/box-model-example-content-2.png)
 
 ---
 <!-- _header: Intro to CSS > Box Model -->
@@ -304,10 +293,19 @@ Anatomy of a Block Box in CSS
 <!-- _header: Intro to CSS > Box Model -->
 <!-- _class: twoColumnImage -->
 
-# Content
+# Border
 
-![img w:600](../images/box-model-example-content-1.png)
-![img w:600](../images/box-model-example-content-2.png)
+![img w:400](../images/box-model-example-border-1.png)
+![img w:400](../images/box-model-example-border-2.png)
+
+---
+<!-- _header: Intro to CSS > Box Model -->
+<!-- _class: twoColumnImage -->
+
+# Margin
+
+![img w:400](../images/box-model-example-margin-1.png)
+![img w:400](../images/box-model-example-margin-2.png)
 
 ---
 <!-- _header: Intro to CSS > Box Model -->
