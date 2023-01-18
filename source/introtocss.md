@@ -31,17 +31,7 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
         display: flex;
         justify-content: space-around;
     }
-</style>
 
-
-<!--  SECTION 1: INTRO  -------------------------------->
-<!-- TIME: 1.5 min -->
-<!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
-<!-- _color: white -->
-<!-- _header: "" -->
-<!-- _footer: "**Allie Polubiec**\nemail: alexandra.polubiec@gmail.com\nslides: [github.com/paloobi/intro-to-css]([github.com/paloobi](https://www.github.com/paloobi))" -->
-<!-- _class: titlePage -->
-<style>
     section.titlePage footer {
         background-color: rgb(255, 255, 255, 0.8);
         color: #000;
@@ -51,7 +41,21 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
         left: 0;
         box-shadow: 0 2px 5px 2px rgb(0, 0, 0, .4);
     }
+
+    section.titlePage {
+        color: white;
+        background-image: linear-gradient(to right, #4a00e0, #D000FF );
+    }
 </style>
+
+
+<!--  SECTION 1: INTRO  -------------------------------->
+<!-- TIME: 1.5 min -->
+
+<!-- _color: white -->
+<!-- _header: "" -->
+<!-- _footer: "**Allie Polubiec**\nemail: alexandra.polubiec@gmail.com\nslides: [github.com/paloobi/intro-to-css]([github.com/paloobi](https://www.github.com/paloobi))" -->
+<!-- _class: titlePage -->
 
 # Intro to CSS
 
@@ -82,8 +86,8 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 
 <!--  SECTION 2: WHAT IS CSS  -------------------------------->
 <!-- TIME: 3 min -->
-<!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
 <!-- _color: white -->
+<!-- _class: titlePage -->
 <!-- _header: "" -->
 <!-- _footer: "" -->
 
@@ -663,6 +667,8 @@ h1 {
 <!-- _header: Intro to CSS > The Cascade -->
 
 <!-- CSS uses the Cascade algorithm to determine which styles to apply-->
+<!-- At each stage of the Cascade, rules that apply to the same element are eliminated according to various criteria until 1 remains per property -->
+
 <!-- RELEVANCE: Does the rule apply to this element?  -->
 <!-- ORIGIN & IMPORTANCE: Where is the rule coming from? (Browser defaults? External stylesheet?) Is it flagged with the `!important` keyword? -->
 <!-- SPECIFICITY: Which rule is more specific? -->
@@ -693,25 +699,6 @@ h1 {
 #### 3. **Specificity**
 
 #### 4. **Order**
-
----
-<!-- _header: Intro to CSS > The Cascade -->
-
-# Inline Styles > Other Developer Styles
-
-<!-- separate from specificity & origin -->
-<!-- inline  -->
-#### **./styles.css**
-```css
-.purple {
-    color: purple;
-}
-```
-
-#### **./index.html**
-```html
-<h1 class="purple" style="color: green;">What Color Am I?</h1> 
-```
 
 ---
 <!-- _header: Intro to CSS > The Cascade > Specificity -->
@@ -755,6 +742,26 @@ h1 {
 ```
 
 ---
+<!-- _header: Intro to CSS > The Cascade -->
+
+# Inline Styles > Other Developer Styles
+
+<!-- not strictly specificity, it has precedence -->
+<!-- inline  -->
+#### **./styles.css**
+```css
+.purple {
+    color: purple;
+}
+```
+
+#### **./index.html**
+```html
+<h1 class="purple" style="color: green;">What Color Am I?</h1> 
+```
+
+---
+
 <!-- _header: Intro to CSS > The Cascade > Order -->
 
 # The Cascade > Order
