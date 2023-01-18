@@ -39,9 +39,12 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 <!-- _class: titlePage -->
 <style>
     section.titlePage footer {
+        background-color: rgb(255, 255, 255, 0.8);
+        color: #000;
+        padding: 18px;
+        border-radius: 4px;
         font-size: 20px;
         /* font-weight: bold; */
-        color: white;
     }
 </style>
 
