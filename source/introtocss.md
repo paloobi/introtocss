@@ -269,7 +269,7 @@ Anatomy of a Block Box in CSS
 
 # Example
 
-![img w:500](../images/box-model-example.png)
+![img w:300](../images/box-model-example.png)
 
 ---
 <!-- _header: Intro to CSS > Box Model -->
@@ -277,8 +277,8 @@ Anatomy of a Block Box in CSS
 
 # Content
 
-![img w:600](../images/box-model-example-content-1.png)
-![img w:600](../images/box-model-example-content-2.png)
+![img w:400](../images/box-model-example-content-1.png)
+![img w:400](../images/box-model-example-content-2.png)
 
 ---
 <!-- _header: Intro to CSS > Box Model -->
@@ -295,8 +295,8 @@ Anatomy of a Block Box in CSS
 
 # Border
 
-![img w:400](../images/box-model-example-border-1.png)
-![img w:400](../images/box-model-example-border-2.png)
+![img w:300](../images/box-model-example-border-1.png)
+![img w:300](../images/box-model-example-border-2.png)
 
 ---
 <!-- _header: Intro to CSS > Box Model -->
