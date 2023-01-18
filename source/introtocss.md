@@ -23,7 +23,6 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
         color: #D000FF;
     }
 
-
     a {
         color: #D000FF;
     }
@@ -261,41 +260,54 @@ Anatomy of a Block Box in CSS
 
 ---
 <!-- _header: Intro to CSS > Box Model -->
+<!-- _class: twoColumnImage -->
 
 # Example
 
 ![img w:500](../images/box-model-example.png)
 
 ---
-
 <!-- _header: Intro to CSS > Box Model -->
+<!-- _class: twoColumnImage -->
+<style>
+    section.twoColumnImage p {
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
 
 # Margin
 
-![img w:600](../images/box-model-example-margin.png)
+![img w:400](../images/box-model-example-margin-1.png)
+![img w:400](../images/box-model-example-margin-2.png)
 
 ---
-
 <!-- _header: Intro to CSS > Box Model -->
+<!-- _class: twoColumnImage -->
 
 # Border
 
-![img w:500](../images/box-model-example-border.png)
+![img w:400](../images/box-model-example-border-1.png)
+![img w:400](../images/box-model-example-border-2.png)
+
 
 ---
-
 <!-- _header: Intro to CSS > Box Model -->
+<!-- _class: twoColumnImage -->
 
 # Padding
 
-![img w:600](../images/box-model-example-padding.png)
+![img w:400](../images/box-model-example-padding-1.png)
+![img w:400](../images/box-model-example-padding-2.png)
 
 ---
 <!-- _header: Intro to CSS > Box Model -->
+<!-- _class: twoColumnImage -->
 
 # Content
 
-![img w:900](../images/box-model-example-content.png)
+![img w:600](../images/box-model-example-content-1.png)
+![img w:600](../images/box-model-example-content-2.png)
 
 ---
 <!-- _header: Intro to CSS > Box Model -->
