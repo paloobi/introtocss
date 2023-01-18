@@ -46,13 +46,15 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
         color: white;
         background-image: linear-gradient(to right, #4a00e0, #D000FF );
     }
+
+    section.titlePage h1, section.titlePage h2 {
+        color: white
+    }
 </style>
 
 
 <!--  SECTION 1: INTRO  -------------------------------->
-<!-- TIME: 1.5 min -->
 
-<!-- _color: white -->
 <!-- _header: "" -->
 <!-- _footer: "**Allie Polubiec**\nemail: alexandra.polubiec@gmail.com\nslides: [github.com/paloobi/intro-to-css]([github.com/paloobi](https://www.github.com/paloobi))" -->
 <!-- _class: titlePage -->
@@ -61,17 +63,17 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 
 ---
 
-# Agenda
+# What We'll Cover
 
 * What is CSS?
-* How to use CSS
+* Understanding the CSS Box Model
 * Basic CSS syntax
-* The Cascade
-* Intro to CSS Lab (after lecture)
+* The CSS Cascade
+* After Lecture: Intro to CSS Lab
 
 ---
 
-# How CSS Fits Into the Web
+# How CSS Fits into the Web
 
 <!-- JavaScript = Programming Language = Procedures & Logic, Instructions-->
 * ### **JavaScript** - Programming Language
@@ -85,8 +87,7 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 ---
 
 <!--  SECTION 2: WHAT IS CSS  -------------------------------->
-<!-- TIME: 3 min -->
-<!-- _color: white -->
+
 <!-- _class: titlePage -->
 <!-- _header: "" -->
 <!-- _footer: "" -->
@@ -132,14 +133,14 @@ CSS handles how that content is presented.
 For example, CSS is used in these slides to set the text size, color and weight.
 -->
 
-# What CSS Does
+# CSS = Presentation
 
 - typography
 - color
 - sizing
 - spacing
 - layout
-- movement
+- animation
 
 ---
 <!-- _header: "" -->
@@ -154,46 +155,12 @@ For example, CSS is used in these slides to set the text size, color and weight.
 ![bg width:600](../images/xkcd-without-css.png)
 
 <!-- XKCD comic without CSS -->
----
-
-<!-- _header: Intro to CSS > What is CSS? -->
-
-# Why is CSS separate from HTML?
-
-World Wide Web Consortium (W3C) Mission:
-
-- Web for All
-- Web on Everything
-
-Source: https://www.w3.org/Consortium/mission
-
-<!-- HTML must be platform agnostic -->
-<!-- Web runs on your phone, your laptop, your TV. Screen readers need to be able to read HTML. -->
-<!-- HTML is just the content. -->
-
----
-
-<!-- _header: Intro to CSS > What is CSS? -->
-
-<!-- OK, so then why does un-styled HTML look styled on my browser? h1 vs. p -->
-# Your Browser is Already Using CSS
-## 
-
----
-<!-- _header: Intro to CSS > What is CSS? -->
-
-<!-- Your browser defines CSS -->
-<!-- default presentation even if you don't add CSS -->
-# Your Browser is Already Using CSS
-## **Browser Default Styles**
 
 ---
 
 <!--  SECTION 3: BOX MODEL  -------------------------------->
-<!-- TIME: 6 minutes -->
 
-<!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
-<!-- _color: white -->
+<!-- _class: titlePage -->
 <!-- _header: "" -->
 <!-- _footer: "" -->
 
@@ -257,7 +224,7 @@ examples:`a`, `span`
 <!-- CONTENT = the dynamic content, such as the text in a paragraph, or the label on a button -->
 <!-- PADDING = space between the content and its border; space inside -->
 <!-- BORDER = border around the outside of the object -->
-<!-- MARGIN = space around -->
+<!-- MARGIN = space around / between -->
 # The Box Model
 
 Anatomy of a Block Box in CSS
@@ -321,20 +288,18 @@ Anatomy of a Block Box in CSS
 ---
 
 <!--  SECTION 4: WRITING CSS  -------------------------------->
-<!-- TIME: 6 min -->
 
-<!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
-<!-- _color: white -->
+<!-- _class: titlePage -->
 <!-- _header: "" -->
 <!-- _footer: "" -->
 
-# How to Write CSS
+# CSS Syntax
 
 ---
 <!-- _header: Intro to CSS > Writing CSS -->
 
-## CSS Rules
-Define how a box (and its contents) should be presented
+# Writing CSS > Rules
+**CSS Rule** = defines how a box (and its contents) should be presented
 
 ---
 <!-- _header: Intro to CSS > Writing CSS > Rules -->
@@ -349,10 +314,10 @@ p { /* <---- SELECTOR */
 }
 ```
 
-- **Selector** - which element(s) to apply styles to
-* **Declaration** - colon separated:
-    * **property** to set
-    * **value** to set it to
+- **Selector**: which elements to apply styles to
+* **Declaration**:
+    * **property**: identifier to indicate what style to change
+    * **value**: value to set the property
 
 ---
 
@@ -369,8 +334,13 @@ h1, h2 { /* <---- SELECTOR */
 }
 ```
 
-* **Multiple Selectors** - comma separated
-* **Multiple Declarations** - semi-colon separated
+* **Multiple Selectors**: comma separated
+* **Multiple Declarations**: semi-colon separated
+
+---
+<!-- _header: Intro to CSS > Writing CSS > Selectors -->
+
+# Writing CSS > Selectors
 
 ---
 
@@ -378,12 +348,11 @@ h1, h2 { /* <---- SELECTOR */
 
 ## Common Selectors
 
-* Type: `p`
-* Class: `.myClass`
-* ID: `#myID`
+* **Type** selectors - `p`, `h1`, `div`, `span`
+* **Class** selectors - `.myClass`
+* **ID** selectors - `#myID`
 
 ---
-
 <!-- _header: Intro to CSS > Writing CSS > Selectors -->
 <!-- _class: typeSelectors -->
 
@@ -398,11 +367,6 @@ h1, h2 { /* <---- SELECTOR */
 
 Select subjects by HTML element type.
 
-### HTML
-```html
-<h2>Type Selectors</h2>
-```
-
 ### CSS
 ```css
 h2 {
@@ -410,10 +374,12 @@ h2 {
     color: white;
 }
 ```
-
+### HTML
+```html
+<h2>Type Selectors</h2>
+```
 
 ---
-
 <!-- _header: Intro to CSS > Writing CSS > Selectors -->
 <!-- _class: classSelectors -->
 
@@ -428,17 +394,17 @@ h2 {
 
 Select subjects by their `class` attribute.
 
-### HTML
-```html
-<h2 class="greenText">Class Selectors</h2>
-```
-
 ### CSS
 ```css
 .greenText {
     background-color: green;
     color: white;
 }
+```
+
+### HTML
+```html
+<h2 class="greenText">Class Selectors</h2>
 ```
 
 ---
@@ -456,17 +422,17 @@ Select subjects by their `class` attribute.
 
 Select subject by its `id` attribute.
 
-### HTML
-```html
-<h2 id="uniqueHeader">ID Selectors</h2>
-```
-
 ### CSS
 ```css
 #uniqueHeader {
     color: white;
     background-color: darkblue;
 }
+```
+
+### HTML
+```html
+<h2 id="uniqueHeader">ID Selectors</h2>
 ```
 
 ---
@@ -476,30 +442,31 @@ Select subject by its `id` attribute.
 * Psuedo-classes: `a:hover`
 * Psuedo-elements: `p::first-line`
 * Attribute selectors: `a[href]` or `a[href="example.com"]`
-
----
-<!-- _header: Intro to CSS > Writing CSS > Selectors -->
-
-## Combining Selectors
-
-* List selectors: `h1, p`
-* Compound selector: `div.myClass` or `div#myDiv`
-* Combinators:
-    - Descendent: `div p`
-    - Child: `div > p`
-    - Sibling: `h1 ~ p` and `h1 + p`
+* Combinators
+    - Lists (`h1`, `p`)
+    - Descendent (`div p`)
+    - Child (`div > p`)
+    - Sibling (`h1 ~ p` and `h1 + p`)
 
 See more in [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 
 ---
+<!-- _header: Intro to CSS > Writing CSS > Selectors -->
+
+# CSS Syntax > Declarations
+
+---
+
 <!-- _header: Intro to CSS > Writing CSS > Declarations -->
 
 # What can you do with CSS Declarations?
 
-* Box Model - margin, border, padding, content
-* Text styles
-* Positioning & Layout
-* Element-specific styles (lists, tables, etc)
+* Box model - margin, border, padding, content
+* Text styles - `font-family`, `font-size`, `color`, `font-weight`
+* Color - hex codes, RGB, `opacity`, `linear-gradient`
+* Size - `height`, `width`
+* Positioning & layout
+* Element-specific styles - lists, tables
 * Animations
 
 ---
@@ -515,10 +482,8 @@ See more in [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/do
 ---
 
 <!--  SECTION 5: ADDING CSS TO HTML  -------------------------------->
-<!-- TIME: 4 min -->
 
-<!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
-<!-- _color: white -->
+<!-- _class: titlePage -->
 <!-- _header: "" -->
 <!-- _footer: "" -->
 
@@ -526,42 +491,7 @@ See more in [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/do
 ---
 <!-- _header: Intro to CSS > Adding CSS to HTML -->
 
-## Where CSS Can Be Defined
-
-* Inline Styles
-* Internal Stylesheets
-* External Stylesheets
-
----
-<!-- _header: Intro to CSS > Adding CSS to HTML -->
-
-# Inline Styles
-
-```html
-<p style="color: purple;">Hello World</p>
-```
-### **Avoid if possible.**
-
----
-<!-- _header: Intro to CSS > Adding CSS to HTML -->
-
-# Internal Stylesheets
-
-#### **./index.html**
-```html
-<style>
-    p {
-        color: purple;
-    }
-</style>
-
-<p>Hello World</p>
-```
-
----
-<!-- _header: Intro to CSS > Adding CSS to HTML -->
-
-# External Stylesheets
+## Defining an External Stylesheet
 
 #### **./index.html**
 ```html
@@ -580,27 +510,17 @@ p {
 <!-- _header: Intro to CSS > Adding CSS to HTML -->
 
 <!-- QUESTION: Why do you think it's preferable to use external style sheets? -->
-# Why are **external stylesheets** preferred?
+# Why we use **external stylesheets**
 
-* Respect principles of HTML
+* HTML is for content, not presentation
 * Easy to find
 * Keep it DRY
 * Performance
 
 ---
-<!-- _header: Intro to CSS > Adding CSS to HTML -->
-
-# How CSS is Loaded in the Browser
-
-![img](../images/how-css-works-mozilla.svg)
-source: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works
-
----
-
 <!--  SECTION 6: THE CASCADE  -------------------------------->
-<!-- TIME: ??? 7.5 min? -->
-<!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
-<!-- _color: white -->
+
+<!-- _class: titlePage -->
 <!-- _header: "" -->
 <!-- _footer: "" -->
 
@@ -610,49 +530,25 @@ source: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_w
 
 <!-- _header: Intro to CSS > The Cascade -->
 
-# What happens if there are conflicting rules?
+# What happens if there are **conflicting rules?**
 
 ---
 
 <!-- _header: Intro to CSS > The Cascade -->
 
-#### **./styles.css**
+### CSS
 ```css
 h1 {
     color: purple;
 }
+
+.header {
+    color: green;
+}
 ```
 
-#### **./index.html**
+### HTML
 ```html
-<link href="./style.css" rel="stylesheet" type="text/css"/>
-
-
-<style>
-    h1 {
-        color: black;
-    }
-</style>
-
-<h1 style="color: green;">What Color Am I?</h1> 
-```
-
----
-
-<!-- _header: Intro to CSS > The Cascade -->
-
-#### **./index.html**
-```html
-<style>
-    h1 {
-        color: purple;
-    }
-
-    .header {
-        color: green;
-    }
-</style>
-
 <h1 class="header">What Color Am I?</h1> 
 ```
 
@@ -667,12 +563,7 @@ h1 {
 <!-- _header: Intro to CSS > The Cascade -->
 
 <!-- CSS uses the Cascade algorithm to determine which styles to apply-->
-<!-- At each stage of the Cascade, rules that apply to the same element are eliminated according to various criteria until 1 remains per property -->
-
-<!-- RELEVANCE: Does the rule apply to this element?  -->
-<!-- ORIGIN & IMPORTANCE: Where is the rule coming from? (Browser defaults? External stylesheet?) Is it flagged with the `!important` keyword? -->
-<!-- SPECIFICITY: Which rule is more specific? -->
-<!-- ORDER: Which rule was declared more recently? -->
+<!-- At each stage of the Cascade, rules that apply to an element are eliminated according to various criteria until 1 remains per property -->
 
 # The **Cascade** Algorithm
 
@@ -687,9 +578,18 @@ h1 {
 ---
 <!-- _header: Intro to CSS > The Cascade -->
 
+<!-- As a Developer, the part of this cascade that will be most directly involved in the CSS code you write are Relevance, Specificity & Order-->
+
+<!-- RELEVANCE: Does the rule apply to this element? Selectors - already discussed -->
+
+<!-- ORIGIN & IMPORTANCE: Where is the rule coming from? (Browser defaults? External stylesheet?) Is it flagged with the `!important` keyword? -->
 <!-- I recommend spending some time reading the MDN articles on Cascade to learn more about Relevance, Importance & Origin. -->
-<!-- But as a Developer, the aspects of this cascade that will be most directly involved in the CSS code you write are Relevance, Specificity & Order-->
-<!-- RELEVANCE = selectors -->
+
+<!-- We'll spend time on these last two: -->
+
+<!-- SPECIFICITY: Which rule is more specific? -->
+<!-- ORDER: Which rule was declared more recently? -->
+
 # The **Cascade** Algorithm
 
 #### 1. **Relevance**
@@ -724,11 +624,12 @@ h1 {
     }
 </style>
 
+<!--  QUESTION: Why is the text orange? -->
+
 # What Color Am I?
 
-#### **./index.html**
-```html
-<style>
+### CSS
+```css
     h1 {
         color: purple;
     }
@@ -736,28 +637,11 @@ h1 {
     .header {
         color: darkorange;
     }
-</style>
-
-<h1 class="header">What Color Am I?</h1>
 ```
 
----
-<!-- _header: Intro to CSS > The Cascade -->
-
-# Inline Styles > Other Developer Styles
-
-<!-- not strictly specificity, it has precedence -->
-<!-- inline  -->
-#### **./styles.css**
-```css
-.purple {
-    color: purple;
-}
-```
-
-#### **./index.html**
+### HTML
 ```html
-<h1 class="purple" style="color: green;">What Color Am I?</h1> 
+<h1 class="header">What Color Am I?</h1>
 ```
 
 ---
@@ -771,56 +655,28 @@ h1 {
 <!-- _class: redHeader -->
 <style>
     section.redHeader h1 {
-        color: red;
-    }
-</style>
-
-<!-- Which rule was declared most recently? -->
-
-# What Color Am I?
-
-#### **./styles.css**
-```css
-h1 {
-    color: blue;
-}
-
-h1 {
-    color: red;
-}
-```
-#### **./index.html**
-```html
-<h1>What Color Am I?</h1> 
-```
-
----
-<!-- _header: Intro to CSS > The Cascade > Order -->
-<!-- _class: greenHeader -->
-<style>
-    section.greenHeader h1 {
         color: green;
     }
 </style>
 
 <!-- Which rule was declared most recently? -->
+
 # What Color Am I?
 
-#### **./styles.css**
+### CSS
 ```css
-.purple {
+h1 {
     color: purple;
 }
+
+h1 {
+    color: green;
+}
 ```
-#### **./index.html**
+
+### HTML
 ```html
-<link href="./style.css" rel="stylesheet" type="text/css"/>
-<style>
-    .purple {
-        color: green;
-    }
-</style>
-<h1 class="purple">What Color Am I?</h1> 
+<h1>What Color Am I?</h1> 
 ```
 
 ---
@@ -837,22 +693,11 @@ h1 {
 ![img](../images/browser-dev-tools.png)
 
 ---
-<!-- _header: Intro to CSS > The Cascade -->
-
-# Cascade: Further Reading
-
-MDN Docs:
-- [Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
-)
-- [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
-
----
 
 <!--  SECTION 7: OUTRO  -------------------------------->
-<!-- TIME: 2 -->
 
-<!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
-<!-- _color: white -->
+
+<!-- _class: titlePage -->
 <!-- _header: "" -->
 <!-- _footer: "" -->
 
@@ -864,13 +709,10 @@ MDN Docs:
 # Summary
 
 * CSS = Cascading Style Sheets
-* How CSS works
-    * Box Model
-* Basic CSS syntax
-    * Rule = Selector(s) + Declaration(s)
-* How to use CSS
-    * External Stylesheets
-* The Cascade
+* CSS Box Model
+* Writing CSS Rules
+* External Stylesheets
+* Cascade Algorithm - Relevance, Specificity & Order
 
 ---
 <!-- _header: Intro to CSS > Wrapping Up -->
@@ -887,15 +729,15 @@ MDN Docs:
 # Resources
 
 - MDN CSS Reference: https://developer.mozilla.org/en-US/docs/Web/CSS
+- MDN CSS Cascade: https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
 - CSS-Tricks: https://css-tricks.com/
 - _CSS is Weird_: https://hacks.mozilla.org/2019/10/why-is-css-so-weird/ (Video)
 - _HTML & CSS_ by John Duckett (Book)
 
 ---
 
-<!-- _backgroundImage: linear-gradient(to right, #4a00e0, #D000FF ); -->
-<!-- _color: white -->
+<!-- _class: titlePage -->
 <!-- _header: "" -->
-<!-- _footer: "" -->
+<!-- _footer: "**Allie Polubiec**\nemail: alexandra.polubiec@gmail.com\nslides: [github.com/paloobi/intro-to-css]([github.com/paloobi](https://www.github.com/paloobi))" -->
 
-# Let's Get Stylin'!
+# Let's Get Stylin'
