@@ -44,8 +44,8 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
         padding: 8px 18px;
         border-radius: 0 4px 4px 0;
         font-size: 20px;
-        left: 0
-        /* font-weight: bold; */
+        left: 0;
+        box-shadow: 0 2px 5px 2px rgb(0, 0, 0, .4);
     }
 </style>
 
