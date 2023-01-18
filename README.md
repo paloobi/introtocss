@@ -15,4 +15,6 @@ To export notes as a separate text file, run:
 
 ## How These Slides Were Made
 
-This slide deck was made with marp and is built using marp-cli: https://github.com/marp-team/marp-cli
+* This slide deck was written in markdown using the marp framework
+* Slides are built using marp-cli: https://github.com/marp-team/marp-cli
+* The diagrams were made in [Excalidraw](https://excalidraw.com/). You can load the diagram files into Excalidraw if you want to make changes to them. I've included some of the diagrams in `./diagrams`.
