@@ -68,7 +68,7 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 * What is CSS?
 * Understanding the CSS Box Model
 * How to write CSS
-* The CSS Cascade
+* How Cascading works
 * After Lecture: Intro to CSS Lab
 
 ---
@@ -433,7 +433,7 @@ h1 {
 }
 
 .header {
-    color: green;
+    color: darkorange;
 }
 ```
 
