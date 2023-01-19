@@ -115,34 +115,6 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 <!-- Style Sheet = (like in print media) List of Styles to be applied to structured content -->
 
 ---
-
-
-<!-- _header: Intro to CSS > What is CSS? -->
-
-<!-- _class: threecolumn -->
-<style>
-section.threecolumn ul { columns: 3; }
-</style>
-
-<!--
-
-HTML handles content and structure 
-
-CSS handles how that content is presented.
-
-For example, CSS is used in these slides to set the text size, color and weight.
--->
-
-# CSS = Presentation
-
-- typography
-- color
-- sizing
-- spacing
-- layout
-- animation
-
----
 <!-- _header: "" -->
 <!-- _footer: "" -->
 ![bg width:1200](../images/xkcd-with-css.png)
@@ -439,102 +411,45 @@ Select subject by its `id` attribute.
 <!-- _header: Intro to CSS > Writing CSS > Selectors -->
 
 ## Advanced Selectors
-* Psuedo-classes: `a:hover`
-* Psuedo-elements: `p::first-line`
-* Attribute selectors: `a[href]` or `a[href="example.com"]`
-* Combinators
-    - Lists (`h1, p`)
-    - Descendent (`div p`)
-    - Child (`div > p`)
-    - Sibling (`h1 ~ p` and `h1 + p`)
+* Psuedo-classes (eg. `a:hover`)
+* Psuedo-elements (eg. `p::first-line`)
+* Attribute selectors (eg. `a[href]`, `a[href="example.com"]`)
+* Combinators: (eg. `div p`)
 
 See more in [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 
 ---
-<!-- _header: Intro to CSS > Writing CSS > Selectors -->
+<!-- _header: Intro to CSS > Writing CSS > Declarations -->
 
 # CSS Syntax > Declarations
 
 ---
-
 <!-- _header: Intro to CSS > Writing CSS > Declarations -->
+<!-- _class: threecolumn -->
+<style>
+section.threecolumn ul { columns: 3; }
+</style>
 
+<!-- box model = margin, border, padding -->
+<!-- text = font, color, size -->
 # What can you do with CSS Declarations?
 
-* Box model - margin, border, padding, content
-* Text styles - `font-family`, `font-size`, `color`, `font-weight`
-* Color - hex codes, RGB, `opacity`, `linear-gradient`
-* Size - `height`, `width`
-* Positioning & layout
-* Element-specific styles - lists, tables
-* Animations
+* box model
+* text styles
+* color
+* sizing
+* position
+* layout
+* animation
+* _and more!_
 
 ---
-
-<!-- _header: Intro to CSS > Writing CSS > Declarations -->
-
-# How do I learn all the properties available?
-
-* Practice _(during today's lab!)_
-* Browser Developer Tools
-* Read the Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
-
----
-
-<!--  SECTION 5: ADDING CSS TO HTML  -------------------------------->
-
-<!-- _class: titlePage -->
-<!-- _header: "" -->
-<!-- _footer: "" -->
-
-# How to Add CSS to HTML
----
-<!-- _header: Intro to CSS > Adding CSS to HTML -->
-
-## Defining an External Stylesheet
-
-#### **./index.html**
-```html
-<link href="./style.css" rel="stylesheet" type="text/css"/>
-<p>Hello World</p>
-```
-
-#### **./style.css**
-```css
-p {
-    color: purple;
-}
-```
-
----
-<!-- _header: Intro to CSS > Adding CSS to HTML -->
-
-<!-- QUESTION: Why do you think it's preferable to use external style sheets? -->
-# Why we use **external stylesheets**
-
-* HTML is for content, not presentation
-* Easy to find
-* Keep it DRY
-* Performance
-
----
-<!--  SECTION 6: THE CASCADE  -------------------------------->
-
-<!-- _class: titlePage -->
-<!-- _header: "" -->
-<!-- _footer: "" -->
-
-# Cascade
-
----
-
-<!-- _header: Intro to CSS > The Cascade -->
+<!-- _header: Intro to CSS > Writing CSS -->
 
 # What happens if there are **conflicting rules?**
 
 ---
-
-<!-- _header: Intro to CSS > The Cascade -->
+<!-- _header: Intro to CSS > Writing CSS -->
 
 ### CSS
 ```css
@@ -554,18 +469,28 @@ h1 {
 
 ---
 
-<!-- _header: Intro to CSS > The Cascade -->
+<!-- _header: Intro to CSS > Writing CSS -->
 
 <!-- I said we'd come back to CASCADING -->
 # **Cascading** Style Sheets
 
 ---
-<!-- _header: Intro to CSS > The Cascade -->
 
-<!-- CSS uses the Cascade algorithm to determine which styles to apply-->
-<!-- At each stage of the Cascade, rules that apply to an element are eliminated according to various criteria until 1 remains per property -->
+<!--  SECTION 5: THE CASCADE  -------------------------------->
 
-# The **Cascade** Algorithm
+<!-- _class: titlePage -->
+<!-- _header: "" -->
+<!-- _footer: "" -->
+
+# Cascade
+
+---
+<!-- _header: Intro to CSS > Cascade -->
+
+<!-- CSS uses the Cascade algorithm how browser determine which styles to apply-->
+<!-- For a given element, the Cascade Algorithm: -->
+
+# Cascade Algorithm
 
 #### 1. Relevance
 
@@ -576,37 +501,87 @@ h1 {
 #### 4. Order
 
 ---
-<!-- _header: Intro to CSS > The Cascade -->
+<!-- _header: Intro to CSS > Cascade -->
 
-<!-- As a Developer, the part of this cascade that will be most directly involved in the CSS code you write are Relevance, Specificity & Order-->
+<!-- RELEVANCE: Which rules apply to this element? Selectors - already discussed -->
 
-<!-- RELEVANCE: Does the rule apply to this element? Selectors - already discussed -->
-
-<!-- ORIGIN & IMPORTANCE: Where is the rule coming from? (Browser defaults? External stylesheet?) Is it flagged with the `!important` keyword? -->
-<!-- I recommend spending some time reading the MDN articles on Cascade to learn more about Relevance, Importance & Origin. -->
-
-<!-- We'll spend time on these last two: -->
-
-<!-- SPECIFICITY: Which rule is more specific? -->
-<!-- ORDER: Which rule was declared more recently? -->
-
-# The **Cascade** Algorithm
+# Cascade Algorithm
 
 #### 1. **Relevance**
 
 #### 2. Origin & Importance
 
+#### 3. Specificity
+
+#### 4. Order
+
+---
+<!-- _header: Intro to CSS > Cascade -->
+
+<!-- ORIGIN & IMPORTANCE: Where are the rules coming from? (Browser defaults? External stylesheet?) Your styles will override (usually) -->
+
+# Cascade Algorithm
+
+#### 1. Relevance
+
+#### 2. **Origin & Importance**
+
+#### 3. Specificity
+
+#### 4. Order
+
+---
+<!-- _header: Intro to CSS > Cascade -->
+
+<!-- SPECIFICITY: Which rule is most specific? -->
+
+# Cascade Algorithm
+
+#### 1. Relevance
+
+#### 2. Origin & Importance
+
 #### 3. **Specificity**
+
+#### 4. Order
+
+---
+<!-- _header: Intro to CSS > Cascade -->
+
+<!-- ORDER: Which rule was declared most recently? -->
+
+# Cascade Algorithm
+
+#### 1. Relevance
+
+#### 2. Origin & Importance
+
+#### 3. Specificity
 
 #### 4. **Order**
 
 ---
-<!-- _header: Intro to CSS > The Cascade > Specificity -->
+<!-- _header: Intro to CSS > Cascade -->
+
+<!-- As a Developer, the part of this cascade that will be most directly involved in the CSS code you write are Specificity & Order-->
+
+# Cascade Algorithm
+
+#### ~~1. Relevance~~
+
+#### ~~2. Origin & Importance~~
+
+#### 3. Specificity
+
+#### 4. Order
+
+---
+<!-- _header: Intro to CSS > Cascade > Specificity -->
 
 # The Cascade > Specificity
 
 ---
-<!-- _header: Intro to CSS > The Cascade > Specificity -->
+<!-- _header: Intro to CSS > Cascade > Specificity -->
 
 <!-- Which of the rules is most specific? -->
 # More Specific > Less Specific
@@ -616,7 +591,7 @@ h1 {
 3. ID selector
 
 ---
-<!-- _header: Intro to CSS > The Cascade > Specificity-->
+<!-- _header: Intro to CSS > Cascade > Specificity-->
 <!-- _class: orangeHeader -->
 <style>
     section.orangeHeader h1 {
@@ -646,12 +621,12 @@ h1 {
 
 ---
 
-<!-- _header: Intro to CSS > The Cascade > Order -->
+<!-- _header: Intro to CSS > Cascade > Order -->
 
 # The Cascade > Order
 
 ---
-<!-- _header: Intro to CSS > The Cascade > Order -->
+<!-- _header: Intro to CSS > Cascade > Order -->
 <!-- _class: redHeader -->
 <style>
     section.redHeader h1 {
@@ -680,7 +655,7 @@ h1 {
 ```
 
 ---
-<!-- _header: Intro to CSS > The Cascade -->
+<!-- _header: Intro to CSS > Cascade -->
 
 # How do I know **why** something is styled the way it is?
 
@@ -694,7 +669,7 @@ h1 {
 
 ---
 
-<!--  SECTION 7: OUTRO  -------------------------------->
+<!--  SECTION 6: OUTRO  -------------------------------->
 
 
 <!-- _class: titlePage -->
@@ -711,7 +686,6 @@ h1 {
 * CSS = Cascading Style Sheets
 * CSS Box Model
 * Writing CSS Rules
-* External Stylesheets
 * Cascade Algorithm - Relevance, Specificity & Order
 
 ---
@@ -721,21 +695,8 @@ h1 {
 
 * ### **Intro to CSS Lab** <--- Later Today!
 * ### **CSS Layouts** - tomorrow
-* ### **CSS Animations** - next week
 
 ---
-<!-- _header: Intro to CSS > Wrapping Up -->
-
-# Resources
-
-- MDN CSS Reference: https://developer.mozilla.org/en-US/docs/Web/CSS
-- MDN CSS Cascade: https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
-- CSS-Tricks: https://css-tricks.com/
-- _CSS is Weird_: https://hacks.mozilla.org/2019/10/why-is-css-so-weird/ (Video)
-- _HTML & CSS_ by John Duckett (Book)
-
----
-
 <!-- _class: titlePage -->
 <!-- _header: "" -->
 <!-- _footer: "**Allie Polubiec**\nemail: alexandra.polubiec@gmail.com\nslides: [github.com/paloobi/intro-to-css]([github.com/paloobi](https://www.github.com/paloobi))" -->
