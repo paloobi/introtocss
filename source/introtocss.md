@@ -225,6 +225,7 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 ---
 <!-- _header: Intro to CSS > Box Model -->
 
+<!-- ANY QUESTIONS? -->
 ![bg w:800](../images/box-model.png)
 
 ---
@@ -258,8 +259,8 @@ p { /* <---- SELECTOR */
 
 - **Selector**: which elements to apply styles to
 * **Declaration**:
-    * **property**: identifier to indicate what style to change
-    * **value**: value to set the property
+    * **property**: what style to change
+    * **value**: what to set the property to
 
 ---
 
