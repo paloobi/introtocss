@@ -402,6 +402,9 @@ See more in [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/do
 
 <!-- box model = margin, border, padding -->
 <!-- text = font, color, size -->
+
+<!-- Any questions? -->
+
 # What can you do with CSS Declarations?
 
 * box model
