@@ -369,8 +369,8 @@ Select subject by its `id` attribute.
 ### CSS
 ```css
 #uniqueHeader {
-    color: white;
     background-color: darkblue;
+    color: white;
 }
 ```
 
