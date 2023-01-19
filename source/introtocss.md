@@ -487,8 +487,8 @@ h1 {
 ---
 <!-- _header: Intro to CSS > Cascade -->
 
-<!-- CSS uses the Cascade algorithm how browser determine which styles to apply-->
-<!-- For a given element, the Cascade Algorithm: -->
+<!-- how browser determine which styles to apply-->
+<!-- For a given element, the Cascade Algorithm checks: -->
 
 # Cascade Algorithm
 
@@ -518,7 +518,11 @@ h1 {
 ---
 <!-- _header: Intro to CSS > Cascade -->
 
-<!-- ORIGIN & IMPORTANCE: Where are the rules coming from? (Browser defaults? External stylesheet?) Your styles will override (usually) -->
+<!-- ORIGIN & IMPORTANCE: Where are the rules coming from? (Browser defaults? External stylesheet?)
+
+This is most complicated part of the Cascade. You don't need to fully understand it now.
+
+Your styles will override (usually) -->
 
 # Cascade Algorithm
 
@@ -563,7 +567,7 @@ h1 {
 ---
 <!-- _header: Intro to CSS > Cascade -->
 
-<!-- As a Developer, the part of this cascade that will be most directly involved in the CSS code you write are Specificity & Order-->
+<!-- Let's go over a couple examples for Specificity and Order. -->
 
 # Cascade Algorithm
 
@@ -578,17 +582,17 @@ h1 {
 ---
 <!-- _header: Intro to CSS > Cascade > Specificity -->
 
-# The Cascade > Specificity
+# Cascade > Specificity
 
 ---
 <!-- _header: Intro to CSS > Cascade > Specificity -->
 
 <!-- Which of the rules is most specific? -->
-# More Specific > Less Specific
+# Least to Most Specific
 
-1. Type selector
-2. Class selector
-3. ID selector
+1. **Type** selector
+2. **Class** selector
+3. **ID** selector
 
 ---
 <!-- _header: Intro to CSS > Cascade > Specificity-->
@@ -623,7 +627,7 @@ h1 {
 
 <!-- _header: Intro to CSS > Cascade > Order -->
 
-# The Cascade > Order
+# Cascade > Order
 
 ---
 <!-- _header: Intro to CSS > Cascade > Order -->
@@ -655,22 +659,8 @@ h1 {
 ```
 
 ---
-<!-- _header: Intro to CSS > Cascade -->
-
-# How do I know **why** something is styled the way it is?
-
----
-<!-- _header: "" -->
-<!-- _footer: "" -->
-
-## **Browser Developer Tools**
-
-![img](../images/browser-dev-tools.png)
-
----
 
 <!--  SECTION 6: OUTRO  -------------------------------->
-
 
 <!-- _class: titlePage -->
 <!-- _header: "" -->
@@ -686,7 +676,7 @@ h1 {
 * CSS = Cascading Style Sheets
 * CSS Box Model
 * Writing CSS Rules
-* Cascade Algorithm - Relevance, Specificity & Order
+* Cascade Algorithm
 
 ---
 <!-- _header: Intro to CSS > Wrapping Up -->
