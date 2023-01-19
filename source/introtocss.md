@@ -387,8 +387,7 @@ Select subject by its `id` attribute.
 * Pseudo-elements (eg. `p::first-line`)
 * Attribute selectors (eg. `a[href]`, `a[href="example.com"]`)
 * Combinator selectors (eg. `div p`)
-
-See more in [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+* See [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 
 ---
 <!-- _header: Intro to CSS > Writing CSS > Declarations -->
