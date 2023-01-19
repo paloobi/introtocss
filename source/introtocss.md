@@ -393,7 +393,7 @@ Select subject by its `id` attribute.
 <!-- _header: Intro to CSS > Writing CSS > Declarations -->
 
 <!--  BEFORE WE MOVE ON: If we had two h1s and we wanted to only select one of them, how might we do that?  -->
-# CSS Syntax > Declarations
+# Writing CSS > Declarations
 
 ---
 <!-- _header: Intro to CSS > Writing CSS > Declarations -->
