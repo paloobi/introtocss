@@ -136,6 +136,8 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 <!-- _header: "" -->
 <!-- _footer: "" -->
 
+<!-- OK so we need CSS or our websites will look very bad -->
+
 # The Box Model
 
 ---
@@ -391,6 +393,7 @@ See more in [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/do
 ---
 <!-- _header: Intro to CSS > Writing CSS > Declarations -->
 
+<!--  BEFORE WE MOVE ON: If we had two h1s and we wanted to only select one of them, how might we do that?  -->
 # CSS Syntax > Declarations
 
 ---
@@ -630,6 +633,23 @@ h1 {
 ```html
 <h1>What Color Am I?</h1> 
 ```
+
+---
+<!-- _header: Intro to CSS > Cascade -->
+
+<!-- DEMO TIME: Browser DevTools
+
+1. Select "why"
+
+2. point out that these are complex selectors bc marp
+
+3. point out its color
+
+4. show color overrides
+
+5. delete color-->
+
+# How do I know **why** something is styled the way it is?
 
 ---
 
