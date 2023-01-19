@@ -325,7 +325,6 @@ h2 {
 ---
 <!-- _header: Intro to CSS > Writing CSS > Selectors -->
 <!-- _class: classSelectors -->
-
 <style>
     section.classSelectors h2 {
         background-color: green;
@@ -382,10 +381,10 @@ Select subject by its `id` attribute.
 <!-- _header: Intro to CSS > Writing CSS > Selectors -->
 
 ## Advanced Selectors
-* Psuedo-classes (eg. `a:hover`)
-* Psuedo-elements (eg. `p::first-line`)
+* Pseudo-classes (eg. `a:hover`)
+* Pseudo-elements (eg. `p::first-line`)
 * Attribute selectors (eg. `a[href]`, `a[href="example.com"]`)
-* Combinators: (eg. `div p`)
+* Combinator selectors (eg. `div p`)
 
 See more in [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 
@@ -398,7 +397,7 @@ See more in [MDN CSS Selectors Reference](https://developer.mozilla.org/en-US/do
 <!-- _header: Intro to CSS > Writing CSS > Declarations -->
 <!-- _class: threecolumn -->
 <style>
-section.threecolumn ul { columns: 3; }
+    section.threecolumn ul { columns: 3; }
 </style>
 
 <!-- box model = margin, border, padding -->
