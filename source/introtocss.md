@@ -67,7 +67,7 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 
 * What is CSS?
 * Understanding the CSS Box Model
-* Basic CSS syntax
+* How to write CSS
 * The CSS Cascade
 * After Lecture: Intro to CSS Lab
 
