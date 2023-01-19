@@ -154,41 +154,12 @@ footer: "[github.com/paloobi/introtocss](https://www.github.com/paloobi/introtoc
 
 ---
 <!-- _header: Intro to CSS > Box Model -->
-
-<!-- Two general display types: -->
-# Box Display Types
-
-* ### **block**
-* ### **inline**
-
----
-<!-- _header: Intro to CSS > Box Model -->
-
-<!-- BLOCK = new block will go to the next line -->
-
-### **Block** Elements
-examples: `div`, `p`, `h1`
-
-![img](../images/display-block.png)
-
----
-<!-- _header: Intro to CSS > Box Model -->
-
-<!-- INLINE = new block will continue without moving to new line -->
-
-### **Inline** Elements
-examples:`a`, `span`
-
-![img](../images/display-inline.png)
-
----
-<!-- _header: Intro to CSS > Box Model -->
 <!-- _class: textRight -->
 
 <style>
     section.textRight ul {
         position: absolute;
-        left: 50%;
+        left: 60%;
         top: 300px;
     }
 </style>
@@ -199,9 +170,8 @@ examples:`a`, `span`
 <!-- MARGIN = space around / between -->
 # The Box Model
 
-Anatomy of a Block Box in CSS
 
-![img w:460 center](../images/box-model.png)
+![img w:600](../images/box-model.png)
 
 * Content
 * Padding
